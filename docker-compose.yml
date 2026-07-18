@@ -1,0 +1,7 @@
+services:
+  healthboard:
+    build: .
+    container_name: healthboard
+    ports:
+      - "3030:80"
+    restart: unless-stopped
